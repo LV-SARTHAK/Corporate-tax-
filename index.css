@@ -288,13 +288,6 @@ input[type="checkbox"] {
 }
 
 .checkbox-non-active {
-    /* width: 24px;
-    height: 24px;
-    flex-shrink: 0;
-    border-radius: 50%;
-    background-color: rgba(245, 245, 245, 0.50);
-    stroke-width: 1px;
-    stroke: #E0E0E0; */
 }
 
 @media only screen and (max-width: 600px) {
