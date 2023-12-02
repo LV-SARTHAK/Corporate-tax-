@@ -178,6 +178,69 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
+  function submitform(){
+    const input_1 = document.getElementById("Calculatestep1_1").value;
+    const input_3 = document.getElementById("Calculatestep1_3").style.display === "none"?"No":"Yes";
+    const input_4 = document.getElementById("Calculatestep1_4").style.display === "none"?"No":"Yes";
+    const input_5 = document.getElementById("Calculatestep2_1").value;
+    const input_6 = document.getElementById("Calculatestep2_2").value;
+    const input_7 = document.getElementById("Calculatestep2_3").value;
+    const input_8 = document.getElementById("Calculatestep2_4").value;
+    const input_9 = document.getElementById("Calculatestep2_5").value;
+    const input_11 = document.getElementById("Calculatestep3_1").style.display === "none"?"No":"Yes";
+    const input_12 = document.getElementById("Calculatestep3_2").style.display === "none"?"No":"Yes";
+    const input_13 = document.getElementById("Calculatestep3_3").style.display === "none"?"No":"Yes";
+    const input_14 = document.getElementById("Calculatestep3_4").value;
+    const input_15 = document.getElementById("Calculatestep4_1").value;
+    const input_16 = document.getElementById("Calculatestep4_2").value;
+    const input_17 = document.getElementById("Calculatestep4_3").value;
+    const input_18 = document.getElementById("Calculatestep4_4").value;
+    const formdata ={
+      input_1,
+      input_3,
+      input_4,
+      input_5,
+      input_6,
+      input_7,
+      input_8,
+      input_9,
+      input_11,
+      input_12,
+      input_13,
+      input_14,
+      input_15,
+      input_16,
+      input_17,
+      input_18
+    }
+    fetch(
+      "https://test.wp.levitation.co.in/wp-json/gf/v2/forms/13/submissions",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formdata),
+      }
+    )
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.json();
+      })
+      .then((res) => {
+        if (currentStep < totalSteps) {
+          currentStep++;
+          showStep(currentStep);
+          updateStepNavigation();
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }
+
   showStep(currentStep);
   updateStepNavigation();
 
@@ -267,20 +330,12 @@ document.addEventListener("DOMContentLoaded", function () {
   document
     .getElementById("costformgetacall")
     .addEventListener("click", function () {
-      if (currentStep < totalSteps) {
-        currentStep++;
-        showStep(currentStep);
-        updateStepNavigation();
-      }
+   submitform()
     });
   document
     .getElementById("mobile-costformgetacall")
     .addEventListener("click", function () {
-      if (currentStep < totalSteps) {
-        currentStep++;
-        showStep(currentStep);
-        updateStepNavigation();
-      }
+    submitform()
     });
 
 

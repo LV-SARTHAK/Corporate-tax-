@@ -344,7 +344,7 @@
                 <div class="costformstep_inputs">
                     <div class="costform_inp">
                         <div class="costforminput-h">What is the official name of your company?</div>
-                        <input class="costforminput" id="coststep1_4" />
+                        <input class="costforminput" id="Calculatestep1_1" />
 
                     </div>
                     <div class="costform_inp">
@@ -353,7 +353,7 @@
                             <div id="costformstep3_UAEyes"
                                 onclick="toggleStates(costformstep3_UAEyes);toggleStates(costformstep3_UAEno)"
                                 style="display: flex;gap:10px;align-items: center;">
-                                <div class="checkbox-active">
+                                <div class="checkbox-active" id="Calculatestep1_3">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none">
                                         <path
@@ -399,7 +399,7 @@
                             <div id="costformstep3_Freezoneyes"
                                 onclick="toggleStates(costformstep3_Freezoneyes);toggleStates(costformstep3_Freezoneno)"
                                 style="display: flex;gap:10px;align-items: center;">
-                                <div class="checkbox-active">
+                                <div class="checkbox-active" id="Calculatestep1_4">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none">
                                         <path
@@ -448,27 +448,27 @@
                 <div class="costformstep_inputs">
                     <div class="costform_inp">
                         <div class="costforminput-h">Company’s estimated annual revenue in AED?</div>
-                        <input placeholder="Enter Amount" id="coststep2_1" class="costforminput" />
+                        <input type="number" placeholder="Enter Amount" id="Calculatestep2_1" class="costforminput" />
 
                     </div>
                     <div class="costform_inp">
                         <div class="costforminput-h">Company’s annual entertainment expenses in AED?</div>
-                        <input placeholder="Enter Amount" id="coststep2_1" class="costforminput" />
+                        <input type="number" placeholder="Enter Amount" id="Calculatestep2_2" class="costforminput" />
 
                     </div>
                     <div class="costform_inp">
                         <div class="costforminput-h">Company’s annual cost of sales in AED?</div>
-                        <input placeholder="Enter Amount" id="coststep2_1" class="costforminput" />
+                        <input type="number" placeholder="Enter Amount" id="Calculatestep2_3" class="costforminput" />
 
                     </div>
                     <div class="costform_inp">
                         <div class="costforminput-h">Any other expense ?</div>
-                        <input placeholder="Enter Amount" id="coststep2_1" class="costforminput" />
+                        <input type="number" placeholder="Enter Amount" id="Calculatestep2_4" class="costforminput" />
 
                     </div>
                     <div class="costform_inp">
                         <div class="costforminput-h">Company’s employee related expenses in AED?</div>
-                        <input placeholder="Enter Amount" id="coststep2_1" class="costforminput" />
+                        <input type="number" placeholder="Enter Amount" id="Calculatestep2_5" class="costforminput" />
 
                     </div>
 
@@ -483,13 +483,12 @@
                 <div class="costformstep_inputs">
 
                     <div class="costform_inp">
-
                         <div class="costforminput-h">Is your company registered for corporate tax ?</div>
                         <div style="width: 100%;display: flex;flex-direction: row;gap: 100px;">
                             <div id="costformstep3_1yes"
                                 onclick="toggleStates(costformstep3_1yes);toggleStates(costformstep3_1no)"
                                 style="display: flex;gap:10px;align-items: center;">
-                                <div class="checkbox-active">
+                                <div class="checkbox-active" id="Calculatestep3_1">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none">
                                         <path
@@ -535,7 +534,7 @@
                             <div id="costformstep3_2yes"
                                 onclick="toggleStates(costformstep3_2yes);toggleStates(costformstep3_2no)"
                                 style="display: flex;gap:10px;align-items: center;">
-                                <div class="checkbox-active">
+                                <div class="checkbox-active" id="Calculatestep3_2">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none">
                                         <path
@@ -581,7 +580,7 @@
                             <div id="costformstep3_3yes"
                                 onclick="toggleStates(costformstep3_3yes);toggleStates(costformstep3_3no)"
                                 style="display: flex;gap:10px;align-items: center;">
-                                <div class="checkbox-active">
+                                <div class="checkbox-active" id="Calculatestep3_3">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none">
                                         <path
@@ -623,7 +622,7 @@
                     </div>
                     <div class="costform_inp">
                         <div class="costforminput-h">How do you currently manage your company’s bookkeeping?</div>
-                        <select class="costforminput" style="width: 93%;" id="coststep1_2">
+                        <select class="costforminput" style="width: 93%;" id="Calculatestep3_4">
                             <option value="">Select here</option>
                             <option value="CXOs">CXOs</option>
                             <option value="Manager">Manager</option>
@@ -640,13 +639,13 @@
                     <div class="costform_inp" style="margin-right: 10px;">
 
                         <div class="costforminput-h">Your name</div>
-                        <input placeholder="Enter Your Name" id="coststep2_1" class="costforminput" />
+                        <input placeholder="Enter Your Name" id="Calculatestep4_1" class="costforminput" />
 
                     </div>
                     <div class="costform_inp">
 
                         <div class="costforminput-h">Your email</div>
-                        <input id="coststep2_3" placeholder="Enter Your Email" class="costforminput" />
+                        <input id="Calculatestep4_2" placeholder="Enter Your Email" class="costforminput" />
 
                     </div>
 
@@ -655,7 +654,7 @@
                         <div class="costforminput-h">Enter phone number</div>
 
                         <div id="countryDropdown" style="padding:0px;width: 98%;" class="costforminput">
-                            <input style="border: none;" id="input_6" placeholder="Phone" style="border: none;"
+                            <input type="number" style="border: none;" id="Calculatestep4_3" placeholder="Phone" style="border: none;"
                                 class="costforminput" />
                             <div style="display:flex;flex-direction:row-reverse;gap
                               :5px;width:auto;padding-left:30px;" id="selectedImageContainer"></div>
@@ -664,7 +663,7 @@
                     <div class="costform_inp">
 
                         <div class="costforminput-h">Any additional inquiry?</div>
-                        <input id="coststep2_3" placeholder="Let us know how can we assist you further."
+                        <input id="Calculatestep4_4" placeholder="Let us know how can we assist you further."
                             class="costforminput" />
 
                     </div>
