@@ -195,6 +195,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const input_16 = document.getElementById("Calculatestep4_2").value;
     const input_17 = document.getElementById("Calculatestep4_3").value;
     const input_18 = document.getElementById("Calculatestep4_4").value;
+    const countrycode = document.getElementById(
+      "step-1-country-code"
+    ).textContent;
     const formdata ={
       input_1,
       input_3,
@@ -210,7 +213,7 @@ document.addEventListener("DOMContentLoaded", function () {
       input_14,
       input_15,
       input_16,
-      input_17,
+      input_17:countrycode+input_17,
       input_18
     }
     fetch(
